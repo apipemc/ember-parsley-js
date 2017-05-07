@@ -19,4 +19,4 @@ test:
         background: true
     - sleep 5
   override:
-    - ./node_modules/ember-cli/bin/ember test
+    #- ./node_modules/ember-cli/bin/ember test
