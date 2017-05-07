@@ -4,6 +4,9 @@
 
 This README outlines the details of collaborating on this Ember addon.
 
+SAMPLE:
+`{{#form-parsley}}{{/form-parsley}}`
+
 ## Installation
 
 * `git clone <repository-url>` this repository

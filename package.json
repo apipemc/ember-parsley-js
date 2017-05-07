@@ -1,21 +1,23 @@
 {
   "name": "ember-parsley-js",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "An Ember CLI addon for the validation library, Parsley.js",
   "keywords": [
     "ember-addon",
     "ember-parsley-js",
     "parsley.js",
     "parsleyjs",
-    "parslet-js"
+    "parslet-js",
+    "validation",
+    "form"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "apipemc",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/apipemc/ember-parsley-js",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
