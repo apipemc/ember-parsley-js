@@ -4,7 +4,7 @@ export default Ember.Route.extend({
 
   actions: {
     onSave() {
-      console.log("Router")
+      console.log("Action submit");
     }
   }
 
