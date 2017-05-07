@@ -11,12 +11,22 @@ var DEFAULT_OPTIONS = {
 module.exports = {
   name: 'ember-parsley-js',
 
+  isDevelopingAddon: function() {
+    return true;
+  },
+
   included: function(app) {
     this._super.included.apply(this, arguments);
 
     var options = Object.assign({}, DEFAULT_OPTIONS, app.options['ember-parsley-js']);
 
     var parsleyPath = path.join(app.bowerDirectory, 'parsleyjs/dist');
+
+    if (app.env === 'production') {
+      app.import(path.join(parsleyPath, 'parsley.min.js'));
+    } else {
+      app.import(path.join(parsleyPath, 'parsley.js'));
+    }
 
     if ( options.importLang ) {
       var langPath = path.join(parsleyPath, 'i18n/' + options.importLang + '.js');
@@ -30,7 +40,5 @@ module.exports = {
         console.error("Language no exist");
       }
     }
-
-    app.import(path.join(parsleyPath, 'parsley.min.js'));
   }
 };
