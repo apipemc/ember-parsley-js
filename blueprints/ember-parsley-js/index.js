@@ -10,6 +10,7 @@ module.exports = {
   // }
 
   afterInstall: function(options) {
-      return this.addBowerPackageToProject('parsleyjs');
+      return this.addBowerPackagesToProject([{name: 'parsleyjs', target: '2.7.1'}]);
   }
+
 };
