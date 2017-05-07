@@ -1,5 +1,7 @@
 # ember-parsley-js
 
+[![CircleCI](https://circleci.com/gh/apipemc/ember-parsley-js/tree/master.svg?style=svg)](https://circleci.com/gh/apipemc/ember-parsley-js/tree/master)
+
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
