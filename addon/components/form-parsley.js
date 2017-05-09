@@ -6,6 +6,8 @@ export default Ember.Component.extend({
 
   tagName: 'form',
 
+  parsleyRef: null,
+
   //Attribute default options
   inputs: 'input, textarea, select',
   excluded: 'input[type=button], input[type=submit], input[type=reset], input[type=hidden]',
@@ -38,7 +40,13 @@ export default Ember.Component.extend({
       successClass: this.get('successClass')
     };
 
-    this.$().parsley(options);
+    let parsleyRef = this.$().parsley(options);
+
+    this.set('parsleyRef', parsleyRef);
+  },
+
+  willDestroyElement() {
+    this.get('parsleyRef').destroy();
   },
 
   submit(e){
