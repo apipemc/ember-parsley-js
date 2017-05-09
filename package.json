@@ -1,6 +1,6 @@
 {
   "name": "ember-parsley-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An Ember CLI addon for the validation library, Parsley.js",
   "keywords": [
     "ember-addon",
